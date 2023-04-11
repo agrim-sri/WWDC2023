@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		6B429E6B29B4747900525570 /* SavedarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B429E6A29B4747900525570 /* SavedarCollectionViewCell.swift */; };
 		6B429E6F29B477A300525570 /* SavedarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B429E6E29B477A300525570 /* SavedarViewController.swift */; };
-		6B429EFA29D1FFF400525570 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B429EF929D1FFF400525570 /* MyCollectionViewCell.swift */; };
-		6B429EFC29D2A48C00525570 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B429EFB29D2A48C00525570 /* ARViewController.swift */; };
 		6B6287D329AB3930002556F7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6287D229AB3930002556F7 /* SettingsViewController.swift */; };
 		6B6287D529AB420E002556F7 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6287D429AB420E002556F7 /* SettingTableViewCell.swift */; };
 		6B6287D729AB62CD002556F7 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6287D629AB62CD002556F7 /* SwitchTableViewCell.swift */; };
@@ -37,6 +35,14 @@
 		9E1BE9E129AB1E170057C4DC /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BE9E029AB1E170057C4DC /* ProfileTableViewController.swift */; };
 		9E1BE9E329AB1E2F0057C4DC /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1BE9E229AB1E2F0057C4DC /* ProfileTableViewCell.swift */; };
 		9E31BB6129CAC16500793010 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31BB6029CAC16500793010 /* PhotoViewController.swift */; };
+		9E46908F29E515440014EF5A /* hostelChair_medium.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 9E46908A29E515440014EF5A /* hostelChair_medium.usdz */; };
+		9E46909029E515440014EF5A /* Room.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 9E46908B29E515440014EF5A /* Room.usdz */; };
+		9E46909129E515440014EF5A /* Room 2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 9E46908C29E515440014EF5A /* Room 2.usdz */; };
+		9E46909229E515440014EF5A /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 9E46908D29E515440014EF5A /* chair_swan.usdz */; };
+		9E46909329E515440014EF5A /* AirForce.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 9E46908E29E515440014EF5A /* AirForce.usdz */; };
+		9E4B024229E4813800DD5C8D /* ARCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B024129E4813800DD5C8D /* ARCollectionViewController.swift */; };
+		9E4B024429E481CD00DD5C8D /* ARCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B024329E481CD00DD5C8D /* ARCollectionViewCell.swift */; };
+		9E4B024629E481E600DD5C8D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B024529E481E600DD5C8D /* File.swift */; };
 		9E5A2ADF29ABC45A001A7B32 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9E5A2ADE29ABC45A001A7B32 /* FirebaseAuth */; };
 		9E5A2AE129ABC7EA001A7B32 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5A2AE029ABC7EA001A7B32 /* LoginViewController.swift */; };
 		9E5A2AE329ABC8E3001A7B32 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5A2AE229ABC8E3001A7B32 /* CreateAccountViewController.swift */; };
@@ -81,8 +87,6 @@
 /* Begin PBXFileReference section */
 		6B429E6A29B4747900525570 /* SavedarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedarCollectionViewCell.swift; sourceTree = "<group>"; };
 		6B429E6E29B477A300525570 /* SavedarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedarViewController.swift; sourceTree = "<group>"; };
-		6B429EF929D1FFF400525570 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
-		6B429EFB29D2A48C00525570 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		6B6287D229AB3930002556F7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6B6287D429AB420E002556F7 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		6B6287D629AB62CD002556F7 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
@@ -109,6 +113,14 @@
 		9E1BE9E029AB1E170057C4DC /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		9E1BE9E229AB1E2F0057C4DC /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		9E31BB6029CAC16500793010 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		9E46908A29E515440014EF5A /* hostelChair_medium.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hostelChair_medium.usdz; sourceTree = "<group>"; };
+		9E46908B29E515440014EF5A /* Room.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Room.usdz; sourceTree = "<group>"; };
+		9E46908C29E515440014EF5A /* Room 2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Room 2.usdz"; sourceTree = "<group>"; };
+		9E46908D29E515440014EF5A /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
+		9E46908E29E515440014EF5A /* AirForce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = AirForce.usdz; sourceTree = "<group>"; };
+		9E4B024129E4813800DD5C8D /* ARCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCollectionViewController.swift; sourceTree = "<group>"; };
+		9E4B024329E481CD00DD5C8D /* ARCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCollectionViewCell.swift; sourceTree = "<group>"; };
+		9E4B024529E481E600DD5C8D /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		9E5A2AE029ABC7EA001A7B32 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9E5A2AE229ABC8E3001A7B32 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		9E5A2AE429ABCB3D001A7B32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -188,6 +200,7 @@
 				9EFCCC9429A4D8C70076D57E /* WorkDataModel.swift */,
 				9ED57E0629BEEC43006FDA43 /* ARDataModel.swift */,
 				9E8853A929AD2CC60067D497 /* post.swift */,
+				9E4B024529E481E600DD5C8D /* File.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -218,11 +231,24 @@
 		9E1EF49529AF0D81006B5F80 /* modelViews */ = {
 			isa = PBXGroup;
 			children = (
+				9E4B024329E481CD00DD5C8D /* ARCollectionViewCell.swift */,
 				9ED57E3C29C96B50006FDA43 /* WorkTab */,
 				9ED57E3D29C96B68006FDA43 /* FYPTab */,
 				9ED57E3E29C96BCA006FDA43 /* ProfileTab */,
 			);
 			path = modelViews;
+			sourceTree = "<group>";
+		};
+		9E46908929E5150A0014EF5A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				9E46908E29E515440014EF5A /* AirForce.usdz */,
+				9E46908D29E515440014EF5A /* chair_swan.usdz */,
+				9E46908A29E515440014EF5A /* hostelChair_medium.usdz */,
+				9E46908C29E515440014EF5A /* Room 2.usdz */,
+				9E46908B29E515440014EF5A /* Room.usdz */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		9ED57E0829C41F08006FDA43 /* Frameworks */ = {
@@ -246,9 +272,9 @@
 			isa = PBXGroup;
 			children = (
 				9EF2023529857EDA00CA87FD /* CameraViewController.swift */,
-				6B429EFB29D2A48C00525570 /* ARViewController.swift */,
 				9E31BB6029CAC16500793010 /* PhotoViewController.swift */,
 				9E8853AF29AE6C140067D497 /* RoomCaptureViewController.swift */,
+				9E4B024129E4813800DD5C8D /* ARCollectionViewController.swift */,
 			);
 			path = CameraTab;
 			sourceTree = "<group>";
@@ -312,7 +338,6 @@
 			isa = PBXGroup;
 			children = (
 				9EF2023929857EDA00CA87FD /* Main.storyboard */,
-				6B429EF929D1FFF400525570 /* MyCollectionViewCell.swift */,
 				9EF2023E29857EDB00CA87FD /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
@@ -342,6 +367,7 @@
 		9EF2023229857EDA00CA87FD /* Metrics */ = {
 			isa = PBXGroup;
 			children = (
+				9E46908929E5150A0014EF5A /* New Group */,
 				6B6E443E29AF14AB005F8DE5 /* Extension */,
 				9E1EF49329AF0D6C006B5F80 /* MVVM */,
 				6B6287D629AB62CD002556F7 /* SwitchTableViewCell.swift */,
@@ -496,8 +522,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EF2024029857EDB00CA87FD /* LaunchScreen.storyboard in Resources */,
+				9E46908F29E515440014EF5A /* hostelChair_medium.usdz in Resources */,
+				9E46909329E515440014EF5A /* AirForce.usdz in Resources */,
+				9E46909229E515440014EF5A /* chair_swan.usdz in Resources */,
 				9E5A2AE529ABCB3D001A7B32 /* GoogleService-Info.plist in Resources */,
 				9EF2023D29857EDB00CA87FD /* Assets.xcassets in Resources */,
+				9E46909129E515440014EF5A /* Room 2.usdz in Resources */,
+				9E46909029E515440014EF5A /* Room.usdz in Resources */,
 				9EF2023B29857EDA00CA87FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,15 +572,17 @@
 				9E0CCE4329D1E9C200B00D09 /* CameraViewModel.swift in Sources */,
 				9E0CCE5329D1EACC00B00D09 /* ImageLoader.swift in Sources */,
 				6B6287D729AB62CD002556F7 /* SwitchTableViewCell.swift in Sources */,
-				6B429EFA29D1FFF400525570 /* MyCollectionViewCell.swift in Sources */,
 				9E8853B029AE6C140067D497 /* RoomCaptureViewController.swift in Sources */,
 				6B429E6F29B477A300525570 /* SavedarViewController.swift in Sources */,
 				9E0CCE4129D1E99E00B00D09 /* CameraView.swift in Sources */,
+				9E4B024229E4813800DD5C8D /* ARCollectionViewController.swift in Sources */,
 				9E0CCE5529D1EAE100B00D09 /* InfoPanelView.swift in Sources */,
 				9E8853AC29AD2CE40067D497 /* FYPPostHeaderTableViewCell.swift in Sources */,
 				9E0CCE4529D1E9ED00B00D09 /* Capture.swift in Sources */,
+				9E4B024629E481E600DD5C8D /* File.swift in Sources */,
 				9E1BE9E329AB1E2F0057C4DC /* ProfileTableViewCell.swift in Sources */,
 				9EFCCC9529A4D8C70076D57E /* WorkDataModel.swift in Sources */,
+				9E4B024429E481CD00DD5C8D /* ARCollectionViewCell.swift in Sources */,
 				9EF2023629857EDA00CA87FD /* CameraViewController.swift in Sources */,
 				9EF2023429857EDA00CA87FD /* AppDelegate.swift in Sources */,
 				9E8853AE29AD2CF00067D497 /* FYPPostTableViewCell.swift in Sources */,
@@ -566,7 +599,6 @@
 				9E0CCE4D29D1EA6700B00D09 /* CaptureInfo.swift in Sources */,
 				9E0CCE3D29D1E94600B00D09 /* AsyncImageHelpers.swift in Sources */,
 				9E0CCE3F29D1E97900B00D09 /* CameraPreviewView.swift in Sources */,
-				6B429EFC29D2A48C00525570 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iU9-Rw-rJJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -31,10 +32,6 @@
                                     <segue destination="Ccq-uc-T7C" kind="embed" identifier="toRoomCapture" id="E3p-Ed-Kmw"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kvx-gh-6wg" userLabel="AR Container View">
-                                <rect key="frame" x="-12" y="92" width="415" height="717"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h6z-Iy-sJ4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -58,8 +55,7 @@
                             <rect key="frame" x="98" y="5.5" width="218" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
-                                <segment title="AR"/>
-                                <segment title="Measure"/>
+                                <segment title="Photo"/>
                                 <segment title="Room"/>
                             </segments>
                             <connections>
@@ -68,17 +64,17 @@
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="FxG-kz-8MK">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="MFj-mm-BIg">
-                                <rect key="frame" x="367" y="8.5" width="27" height="27"/>
+                                <rect key="frame" x="348" y="5" width="46" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="plus.square.dashed" catalog="system"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" title="AR"/>
+                                <connections>
+                                    <segue destination="h3n-t2-rey" kind="presentation" id="lnh-vW-9R2"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="containerARView" destination="kvx-gh-6wg" id="ifd-2t-ThC"/>
                         <outlet property="containerMeasureView" destination="yiT-Cz-EPb" id="EJl-CY-zRg"/>
                         <outlet property="containerRoomCaptureView" destination="MV8-wv-Rbq" id="Fyv-ma-za6"/>
                         <outlet property="segmentButton" destination="58q-St-9CG" id="nfN-xU-J6R"/>
@@ -95,7 +91,70 @@
                 <hostingController id="KUq-fh-tsj" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ree-9C-Re7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3735" y="-139"/>
+            <point key="canvasLocation" x="3735" y="-191"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="DcY-0R-SXN">
+            <objects>
+                <collectionViewController id="h3n-t2-rey" customClass="ARCollectionViewController" customModule="Metrics" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="hMl-Y9-hjC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MEy-tL-pwr">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ARCollectionViewCell" id="3gj-Tc-SKN" customClass="ARCollectionViewCell" customModule="Metrics" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="108" height="127.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bg7-3r-SoZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="108" height="127.5"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fLw-cG-Odh">
+                                            <rect key="frame" x="0.0" y="0.0" width="108" height="102"/>
+                                            <color key="tintColor" name="rw-light"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="108" id="bPo-Mo-xyR"/>
+                                                <constraint firstAttribute="height" constant="102" id="eeN-Gd-yxs"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tr2-ga-0GJ">
+                                            <rect key="frame" x="8" y="105" width="92" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" name="rw-light"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="tr2-ga-0GJ" firstAttribute="leading" secondItem="bg7-3r-SoZ" secondAttribute="leading" constant="8" id="5Cs-wr-hRj"/>
+                                        <constraint firstAttribute="bottom" secondItem="tr2-ga-0GJ" secondAttribute="bottom" constant="8" id="9a1-CR-CwM"/>
+                                        <constraint firstItem="fLw-cG-Odh" firstAttribute="top" secondItem="bg7-3r-SoZ" secondAttribute="top" id="DPB-Yd-A40"/>
+                                        <constraint firstAttribute="trailing" secondItem="tr2-ga-0GJ" secondAttribute="trailing" constant="8" id="G8n-A3-42o"/>
+                                        <constraint firstAttribute="trailing" secondItem="fLw-cG-Odh" secondAttribute="trailing" id="I0S-2c-7Rh"/>
+                                        <constraint firstItem="tr2-ga-0GJ" firstAttribute="top" secondItem="fLw-cG-Odh" secondAttribute="bottom" constant="3" id="UBl-kR-w4g"/>
+                                        <constraint firstItem="fLw-cG-Odh" firstAttribute="leading" secondItem="bg7-3r-SoZ" secondAttribute="leading" id="bHf-GI-1YU"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="tr2-ga-0GJ" id="V6A-4y-FSr"/>
+                                    <outlet property="thumbnailImageView" destination="fLw-cG-Odh" id="i9U-S7-FAQ"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="h3n-t2-rey" id="ZZq-lq-q5R"/>
+                            <outlet property="delegate" destination="h3n-t2-rey" id="2ra-D4-RDA"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y6u-s4-qUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4539.130434782609" y="22.767857142857142"/>
         </scene>
         <!--Room Capture View Controller-->
         <scene sceneID="bYi-Cf-uiF">
@@ -143,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uuF-3q-dNY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3735" y="427"/>
+            <point key="canvasLocation" x="3735" y="454"/>
         </scene>
         <!--Camera-->
         <scene sceneID="i5v-VX-PH0">
@@ -1018,6 +1077,7 @@
         <image name="arrow.turn.up.right" catalog="system" width="128" height="99"/>
         <image name="briefcase" catalog="system" width="128" height="100"/>
         <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="doc" catalog="system" width="115" height="128"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="g.circle" catalog="system" width="128" height="123"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
@@ -1025,9 +1085,11 @@
         <image name="mail.stack" catalog="system" width="128" height="122"/>
         <image name="message" catalog="system" width="128" height="116"/>
         <image name="person" catalog="system" width="128" height="121"/>
-        <image name="plus.square.dashed" catalog="system" width="128" height="114"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="square.and.pencil" catalog="system" width="128" height="113"/>
+        <namedColor name="rw-light">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

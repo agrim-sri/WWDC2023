@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         FirebaseApp.configure()
+        File.copyResourcesToDocumentsIfNeeded()
         return true
     }
 

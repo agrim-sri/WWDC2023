@@ -19,7 +19,6 @@ class CameraViewController: UIViewController, ARSCNViewDelegate, SCNSceneRendere
     
     @IBOutlet weak var containerRoomCaptureView: UIView!
     @IBOutlet weak var containerMeasureView: UIView!
-    @IBOutlet var arView: ARView!
     @IBOutlet var segmentButton: UISegmentedControl!
     @IBOutlet weak var shareButton: UIButton!
     //ARKit
@@ -44,30 +43,21 @@ class CameraViewController: UIViewController, ARSCNViewDelegate, SCNSceneRendere
         }
     
     func setUp() {
-        containerMeasureView.isHidden = true
+        containerMeasureView.isHidden = false
         containerRoomCaptureView.isHidden = true
-        containerARView.isHidden = false
     }
     
     @IBAction func didTapSegment(_ sender: UISegmentedControl) {
-        containerMeasureView.isHidden = true
+        containerMeasureView.isHidden = false
         containerRoomCaptureView.isHidden = true
-        containerARView.isHidden = false
         
         if sender.selectedSegmentIndex == 0 {
-            containerMeasureView.isHidden = true
-            containerRoomCaptureView.isHidden = true
-            containerARView.isHidden = false
-        }
-        else if sender.selectedSegmentIndex == 1 {
             containerMeasureView.isHidden = false
             containerRoomCaptureView.isHidden = true
-            containerARView.isHidden = true
         }
         else {
             containerMeasureView.isHidden = true
             containerRoomCaptureView.isHidden = false
-            containerARView.isHidden = true
         }
     }
     @IBAction func shareButtonTapped(_ sender: UIButton) {
@@ -78,9 +68,6 @@ class CameraViewController: UIViewController, ARSCNViewDelegate, SCNSceneRendere
                 let activityViewController = UIActivityViewController(activityItems: [shareText, shareURL], applicationActivities: nil)
 
                 present(activityViewController, animated: true, completion: nil)
-        }
-        else if segmentButton.selectedSegmentIndex == 1 {
-            
         }
         else {
             let destinationURL = FileManager.default.temporaryDirectory.appending(path: "Room.usdz")

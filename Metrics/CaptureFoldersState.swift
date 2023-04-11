@@ -40,9 +40,6 @@ class CaptureFolderState: ObservableObject {
             .store(in: &subscriptions)
     }
     
-    /// This method requests the removal of a specific capture `id` from the data model. This removes the
-    /// specified item from the `captures` array on the main thread. If `deleteData` is `true`, this
-    /// method deletes the corresponding files using a background thread.
     func removeCapture(captureInfo: CaptureInfo, deleteData: Bool = true) {
         logger.log("Request removal of captureInfo: \(String(describing: captureInfo))...")
         CaptureFolderState.workQueue.async {
@@ -55,11 +52,9 @@ class CaptureFolderState: ObservableObject {
         }
     }
     
-    /// This method populates the `CaptureInfo` array with all the image files contained in `captureDir` using a
-    /// background queue.  This method publishes  to `captures` when complete.
+
     private func requestLoadCaptureInfo() -> Future<[CaptureInfo], Error> {
-        // Iterate through all the image files in the directory, then extract
-        // the photoIdString and id to create a CaptureInfo.
+        // Iterate through all the image files in the directory, then extract the photoIdString and id to create a CaptureInfo.
         let future = Future<[CaptureInfo], Error> { promise in
             guard self.captureDir != nil else {
                 promise(.failure(.invalidCaptureDir))
